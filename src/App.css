@@ -1,38 +1,98 @@
-.App {
-  text-align: center;
+*,
+* p {
+  margin: 0;
+  padding: 0;
+  font-family: "Varela", sans-serif;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background: url("./img/background.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+}
+.header {
+  margin: auto;
+  width: 50%;
+}
+.logo {
+  background-image: url("../src/img/barter-logo.png");
+  width: 250px;
+  height: 60px;
+  background-size: cover;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header-box {
+  display: flex;
+  align-items: center;
+  flex-direction: column;  
+  padding-top: 15%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.box {
   display: flex;
   flex-direction: column;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 35px;
+}
+
+.login-input {
+  width: 300px;
+  margin-bottom: 15px;
+}
+.header-buttons {
+  margin: auto;
+  margin-top: 50px;
+}
+.btn {
+  border: none;
+  background: none;
+  border-bottom: solid;
+  border-color: #cca08a;
+  font-size: 20px;
+  margin: 10px;
+  padding: 5px;
+  cursor: pointer;
+  transition-duration: 0.5s;
+}
+
+.btn:hover {
+  background: #cca08a;
+}
+
+.register-btn,
+.login-btn, .submit-btn {
+  width: 100px;
+  margin: auto;
+}
+
+.error-message {
+  font-size: 12px;
+  color: #da733b;
+  margin-top: -10px;
+}
+
+.register-success {
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: 50px;
+}
+.register-success p {
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.success-logo {
+  background: url(./img/success-logo.png);
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+  margin: 15px 0;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.login-error-p {
+  margin: 10px auto;
 }

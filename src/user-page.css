@@ -1,0 +1,75 @@
+.userpage-box {
+  align-items: center;
+  width: 100%;
+}
+.userpage {
+  padding: 5% 0;
+}
+.userpage-box h3 {
+  margin-top: 30px;
+}
+.userpage-btns {
+  margin-bottom: 20px;
+}
+.wrapper {
+  width: 80%;
+}
+.barter-card {
+  border: solid #dbd5cc 1px;
+  background: rgba(255, 255, 255, 0.7);
+  width: 32%;
+  padding: 15px;
+  margin-top: 20px;
+}
+.learn p,
+.teach p {
+  font-size: 14px;
+}
+.learn,
+.teach {
+  width: 48%;
+}
+.create-barter-input {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.card-comments {
+  padding-bottom: 15px;
+}
+.barters-offer {
+  display: flex;
+  justify-content: space-between;
+  border-top: solid 1px #dbd5cc;
+  padding-top: 15px;
+}
+.barters-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  gap: 2%;
+}
+
+.new-barter {
+  margin-top: 0 auto;
+}
+.barters-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+.create-barter-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.submit-btn {
+  margin-top: 10px;
+}
+
+.barter-author {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 14px;
+}
