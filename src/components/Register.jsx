@@ -71,6 +71,10 @@ const Register = () => {
       case "password2":
         setPassword2Dirty(true);
         break;
+      default:
+        setUsernameDirty(false);
+        setPasswordDirty(false);
+        setPassword2Dirty(false);
     }
   };
 
@@ -93,7 +97,6 @@ const Register = () => {
         if (result.code && result.code >= 400 && result.message) {
           throw new Error(result.message);
         }
-        console.log(result);
         setRegisterUser(result);
       })
       .catch((error) => {
@@ -112,7 +115,7 @@ const Register = () => {
       <form onSubmit={handleSubmit} className="form">
         <label htmlFor="username">Username</label>
         <input
-        className='login-input'
+          className="login-input"
           type="text"
           name="username"
           value={username}
@@ -125,7 +128,7 @@ const Register = () => {
         <br />
         <label htmlFor="password">Password</label>
         <input
-        className='login-input'
+          className="login-input"
           type="password"
           name="password"
           value={password}
@@ -139,7 +142,7 @@ const Register = () => {
         <br />
         <label htmlFor="password2">Confirm password</label>
         <input
-          className='login-input'
+          className="login-input"
           type="password"
           name="password2"
           value={password2}
@@ -152,6 +155,9 @@ const Register = () => {
         <button disabled={!isValid} className="register-btn btn">
           Register
         </button>
+        {registerError && (
+          <p className="error-message"> {registerError} </p>
+        )}
       </form>
     </div>
   );

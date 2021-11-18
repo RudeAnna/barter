@@ -12,7 +12,6 @@ const initialState = {
 };
 
 const authReducer = (state = initialState, action) => {
-  console.log(action);
   switch (action.type) {
     case LOGIN_USER_REQUEST: {
       return {
@@ -21,8 +20,7 @@ const authReducer = (state = initialState, action) => {
         authError: "",
       };
     }
-    case LOGIN_USER_SUCCESS: {
-      console.log(action.payload)
+    case LOGIN_USER_SUCCESS: { 
       return {
         ...state,
         currentUser: action.payload,
